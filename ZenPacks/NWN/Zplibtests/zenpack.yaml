@@ -4,6 +4,7 @@ device_classes:
   /MyTestOrganizer:
     zProperties:
       zPythonClass: ZenPacks.NWN.Zplibtests.MyDev
+      zCollectorPlugins: NWN.Zplibtests.TestMap1
 
 classes:
   MyDev:
