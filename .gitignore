@@ -1,0 +1,9 @@
+*.swp
+*.egg-info/
+MANIFEST.in
+dist/
+build/
+*.pyc
+*.pyo
+*DS_Store*
+ZenPacks/NWN/CM/tests/coverage/
