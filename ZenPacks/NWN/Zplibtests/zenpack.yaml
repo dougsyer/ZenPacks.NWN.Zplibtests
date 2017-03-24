@@ -20,7 +20,7 @@ classes:
   SubClass3:
     base: [BaseClass2]
   SubClass4:
-    base: [zenpacklib.HWComponent]
+    base: [zenpacklib.HWComponent]  # this broke it
 
 class_relationships:
   - MyDev 1:MC SubClass1
@@ -29,4 +29,4 @@ class_relationships:
   - MyDev 1:MC SubClass4
   - SubClass1 M:M SubClass2 # works
   - SubClass2 M:M SubClass3 # works
-  - SubClass2 M:M SubClass4
+  - SubClass2 M:M SubClass4 # doesnt work
