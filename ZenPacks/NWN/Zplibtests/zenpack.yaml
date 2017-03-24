@@ -19,10 +19,14 @@ classes:
     base: [BaseClass1]
   SubClass3:
     base: [BaseClass2]
+  SubClass4:
+    base: [zenpacklib.HWComponent]
 
 class_relationships:
   - MyDev 1:MC SubClass1
   - MyDev 1:MC SubClass2
   - MyDev 1:MC SubClass3
+  - MyDev 1:MC SubClass4
   - SubClass1 M:M SubClass2 # works
-  - SubClass2 M:M SubClass3 # broken
+  - SubClass2 M:M SubClass3 # works
+  - SubClass2 M:M SubClass4

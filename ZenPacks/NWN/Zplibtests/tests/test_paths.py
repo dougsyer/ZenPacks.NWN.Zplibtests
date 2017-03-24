@@ -8,7 +8,7 @@ from Products.ZenTestCase.BaseTestCase import BaseTestCase
 # zenpacklib Imports
 from ZenPacks.zenoss.ZenPackLib.tests.ZPLTestHarness import ZPLTestHarness
 
-from test_utils import my_dev_factory
+from .test_utils import my_dev_factory
 
 unused(Globals)
 
@@ -21,7 +21,7 @@ t_zp = ZPLTestHarness(zpl_yaml)
 
 class TestPaths(BaseTestCase):
     """
-    test to make sure that components with nested base classes get appropriate paths so 
+    test to make sure that components with nested base classes get appropriate paths so
     that subcomponent panels on non-containing relations work
     """
 
@@ -46,6 +46,7 @@ class TestPaths(BaseTestCase):
         print self.test_my_dev.subClass1s()[0].getAllPaths()
         print self.test_my_dev.subClass2s()[0].getAllPaths()
         print self.test_my_dev.subClass3s()[0].getAllPaths()
+
 
 def test_suite():
     from unittest import TestSuite, makeSuite

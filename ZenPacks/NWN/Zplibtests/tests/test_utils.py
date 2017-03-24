@@ -31,6 +31,7 @@ unused(Globals)
 
 LOG = logging.getLogger('zen.nwnzplibtest')
 
+
 def addContained(obj, relname, target):
     """
     COPIED FROM zenpacklib.tests.test_exta_paths
@@ -94,4 +95,4 @@ def my_dev_factory(dmd):  # pylint: disable=R0914
     addNonContained(sub2, "subClass3s", sub3)
 
     return my_dev
-    
+
