@@ -20,9 +20,9 @@ classes:
     base: [zenpacklib.Component]
   SubClass1:
     base: [BaseClass1]
-      properties:
-         sub_prop_1:
-           grid_display: true
+    properties:
+      sub_prop_1:
+        grid_display: true
   SubClass2:
     base: [BaseClass1]
   SubClass3:

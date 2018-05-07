@@ -54,6 +54,9 @@ class TestMap1(PythonPlugin):
                 objmaps=[ObjectMap({
                     'id': self.prepId('subComponent-1'),
                     'title': 'subComponent-1',
+                    'my_prop_1': 'testprop1',
+                    'my_prop_2': 'testprop2',
+                    'sub_prop_1': 'subprop1',
                     'set_subClass2s': map(self.prepId, ['subComponent-2', ]),
                 })]),
 
