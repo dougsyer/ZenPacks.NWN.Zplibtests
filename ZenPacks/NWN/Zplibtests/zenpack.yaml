@@ -9,6 +9,7 @@ device_classes:
 classes:
   MyDev:
     base: [zenpacklib.Device]
+  
   BaseClass1:
     base: [zenpacklib.Component]
     properties:
@@ -16,17 +17,25 @@ classes:
           grid_display: true
         my_prop2:
           grid_display: false
+  
   BaseClass2:
     base: [zenpacklib.Component]
+  
   SubClass1:
     base: [BaseClass1]
     properties:
       sub_prop_1:
-        grid_display: true
+        grid_display: false
+  
   SubClass2:
     base: [BaseClass1]
+    properties:
+      sub_prop_2:
+        grid_display: true
+
   SubClass3:
     base: [BaseClass2]
+
   SubClass4:
     base: [zenpacklib.HWComponent]  # this broke it
 
